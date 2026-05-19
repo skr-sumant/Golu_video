@@ -4,7 +4,11 @@ import { CalendarCheck } from 'lucide-react';
 
 const Banner = () => {
     return (
-        <section className="w-full py-16 px-4 bg-[#0a0a0a] flex justify-center">
+        <section className="w-full py-16 px-4 bg-[#0a0a0a] flex flex-col items-center justify-center">
+            <div className='flex items-center justify-center text-center mb-10'>
+                <h1 className="text-3xl md:text-5xl font-black tracking-tighter text-white">Feel Free to Book Us.</h1>
+            </div>
+            
             <div className="w-full max-w-7xl relative rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(88,44,255,0.15)] border border-indigo-500/20 group">
                 {/* Background Effects */}
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/60 via-purple-900/40 to-[#0a0a0a] z-0 transition-opacity duration-700 group-hover:opacity-80"></div>
@@ -12,6 +16,7 @@ const Banner = () => {
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#582cff]/20 rounded-full blur-[100px] pointer-events-none"></div>
                 
                 {/* Content */}
+               
                 <div className="relative z-10 flex flex-col md:flex-row items-center justify-between p-10 md:p-14 gap-8">
                     <div className="max-w-2xl text-center md:text-left">
                         <motion.span 

@@ -35,7 +35,7 @@ const Contact = () => {
 
         const whatsappNumber = '919905662424';
 
-        const textMessage = `*New Booking Inquiry* 🎥🚗
+        const textMessage = `*New Booking Inquiry* 
 -----------------------
 *Name:* ${formData.name}
 *Mobile:* ${formData.mobile}
@@ -61,9 +61,9 @@ ${formData.message}`;
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                      <h1 className="text-5xl md:text-6xl font-black mb-6 tracking-tighter text-white md:text-transparent md:bg-clip-text md:bg-gradient-to-r md:from-white md:to-gray-400">
-    Connect With Us
-</h1>
+                        <h1 className="text-5xl md:text-6xl font-black mb-6 tracking-tighter text-white md:text-transparent md:bg-clip-text md:bg-gradient-to-r md:from-white md:to-gray-400">
+                            Connect With Us
+                        </h1>
 
                     </motion.div>
                 </div>
@@ -95,9 +95,9 @@ ${formData.message}`;
                                     <div className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400 flex-shrink-0">
                                         <Mail size={24} />
                                     </div>
-                                    <div>
+                                    <div className="min-w-0">
                                         <p className="text-sm text-gray-400 mb-1">Email Us</p>
-                                        <p className="text-lg font-medium">goluvideosandeep@gmail.com</p>
+                                        <p className="text-lg md:text-md font-medium break-all">goluvideosandeep@gmail.com</p>
                                     </div>
                                 </div>
 
@@ -196,10 +196,10 @@ ${formData.message}`;
 
                                 <button
                                     type="submit"
-                                    className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 text-white rounded-xl px-8 py-4 font-bold text-lg transition-all shadow-[0_0_20px_rgba(34,197,94,0.3)]"
+                                    className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 text-white rounded-xl px-4 py-3 md:px-8 md:py-4 font-bold text-base md:text-lg transition-all shadow-[0_0_20px_rgba(34,197,94,0.3)]"
                                 >
                                     <span>Send via WhatsApp</span>
-                                    <Send size={20} className="ml-2" />
+                                    <Send size={18} className="ml-1 md:ml-2 md:w-5 md:h-5" />
                                 </button>
                             </div>
                         </form>
